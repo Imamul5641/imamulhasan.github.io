@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Faustina:wght@500&family=Noto+Serif&family=Playball&display=swap"
+  rel="stylesheet">
+  <link rel="stylesheet" href="media1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script>
+    function myfunction(){
+      const li=document.getElementById("li");
+      if(li.style.animationName=='bar-in'){li.style.animationName='bar-out';}
+      else{
+        li.style.animation='bar-in 1s forwards';;
+      }
+    }
+    function infunction(){
+      document.getElementById("li").style.animationName='bar-out';
+      // document.getElementById("li").style.animationDuration='1s'
+    }
+    </script>
+    <video autoplay muted loop id="myVideo">
+      <source src="/static/b4.mp4" type="video/mp4">
+    </video>
+</head>
+
+<body>
+  <header>
+    <nav id="nav">
+      <ul id="ul">
+        <div id="imglog">
+          <a href="#section1"><img src="/static/ih.jpeg" alt="" id="logo"></a>
+        </div>
+        <div id="li">
+          <a href="#section1"class="nav-text" onclick="infunction()"><li class="li1">Home</li></a>
+          <a href="#section2"class="nav-text" onclick="infunction()"><li class="li1">Education</li></a>
+          <a href="#section3"class="nav-text" onclick="infunction()"><li class="li1">Skills</li></a>
+          <a href="#section4"class="nav-text" onclick="infunction()"><li class="li1">Project</li></a>
+          <a href="#profile"class="nav-text" onclick="infunction()"><li class="li1">Connect me</li></a>
+        </div>
+        <i class="fa fa-bars" style="font-size:42px" id="bars" onclick="myfunction()"></i>
+      </ul>
+    </nav>
+  </header>
+  <section id="section1">
+    <div id="div1-1"></div>
+    <div id="div1-2">
+      <div id="typs"></div>
+      <div id="myimg"><img src="/static/my.jpeg" alt="" id="myimg1">
+      </div>
+    </div>
+  </section>
+  <section id="section2">
+    <h1>Education</h1>
+    <section id="section2-1">
+      <div class="cl2">
+        <div data-aos="flip-left" data-aos-mirror="true" data-aos-once="false" class="eimg"><a
+            href="https://alipore.kvs.ac.in/" target="_blank" rel="noopener noreferrer"><img src="/static/kvlogo.png"
+              alt="" class="ss"></a></div>
+        <div class="edet">Completed Schooling,<br>Class I to XII from Kendriya Vidyalaya Command Hospital</div>
+      </div>
+      <div class="cl2">
+        <div class="eimg" data-aos="flip-left" data-aos-mirror="true" data-aos-once="false"><a
+            href="http://www.jaduniv.edu.in" target="_blank"><img src="/static/ju.png" alt="" class="ss"></a></div>
+        <div class="edet">Pursuing Bachelor of Engineering In Information Technology from Jadavpur University</div>
+      </div>
+      <div class="cl2">
+        <div class="eimg" data-aos="flip-left" data-aos-mirror="true" data-aos-once="false"><a
+            href="https://study.iitm.ac.in/ds/" target="_blank"><img src="/static/iitm.jpeg" alt="" class="ss"></a>
+        </div>
+        <div class="edet">Pursuing B.Sc in Data Science from IIT Madras</div>
+      </div>
+    </section>
+  </section>
+  <section id="section3">
+    <h1>Skills</h1>
+    <div id="section3-1">
+      <div id="div3-1" class="c3">
+        <div class="div3-1-1">
+          <h1 class="h1">Programming Languages</h1>
+        </div>
+        <div class="div3-1-2" data-aos="fade-right"
+        data-aos-delay="100"
+        data-aos-mirror="true"
+        data-aos-once="false">
+          <div class="pl">C/C++</div>
+          <div class="pl">Python</div>
+          <div class="pl">Java</div>
+          <div class="pl">JavaScript</div>
+          <div class="pl">CSS</div>
+          <div class="pl">HTML</div>
+        </div>
+      </div>
+      <div id="div3-2" class="c3">
+        <div class="div3-1-1">
+          <h1 class="h1"> FrameWorks & Libraries</h1>
+        </div>
+        <div class="div3-1-2"  data-aos="fade-right"
+        data-aos-delay="100"
+        data-aos-mirror="true"
+        data-aos-once="false">
+          <div class="pl">MySqlConnector</div>
+          <div class="pl">NodeJS</div>
+          <div class="pl">Express JS</div>
+          <div class="pl">Pug Template</div>
+          <div class="pl">Matplotlib</div>
+          <div class="pl">Tkinter</div>
+        </div>
+      </div>
+      <div id="div3-3" class="c3">
+        <div class="div3-1-1">
+          <h1 class="h1"> Database Management System</h1>
+        </div>
+        <div class="div3-1-2" data-aos="fade-right"
+        data-aos-delay="100"
+        data-aos-mirror="true"
+        data-aos-once="false">
+          <div class="pl">MySQL</div>
+          <div class="pl">Oracle</div>
+          <div class="pl">MS Excel</div>
+          <div class="pl">MS Access</div>
+          <div class="pl">PL/SQL</div>
+          <div class="pl">Mongodb</div>
+        </div>
+      </div>
+      <div id="div3-4" class="c3">
+        <div class="div3-1-1">
+          <h1 class="h1"> OS & Terminals</h1>
+        </div>
+        <div class="div3-1-2" data-aos="fade-right"
+        data-aos-delay="100"
+        data-aos-mirror="true"
+        data-aos-once="false">
+          <div class="pl">Linux</div>
+          <div class="pl">Windows</div>
+          <div class="pl">MAC</div>
+          <div class="pl">SSH Shell</div>
+          <div class="pl">VS Code</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="section4">
+    <h1>Projects</h1>
+    <div class="project">
+      Working on Project <br>
+      Will be Updated Soon...
+    </div>
+  </section>
+  <section id="profile">
+    <h1 id="profileh">Connect Me</h1>
+    <div id="sprofile">
+      <div class="social"data-aos="zoom-in"
+        data-aos-delay="100"
+        data-aos-mirror="true"
+        data-aos-once="false">
+        <a href="https://leetcode.com/alpha5641/" target="_blank" rel="noopener noreferrer">
+
+          <img src="static/LeetCode.png" alt="" class="spic">
+        </a>
+      </div>
+      <div class="social"data-aos="zoom-in"
+        data-aos-delay="100"
+        data-aos-mirror="true"
+        data-aos-once="false">
+        <a href="https://github.com/Imamul5641" target="_blank" rel="noopener noreferrer">
+        <img src="static/GitHub-logo.png" alt="" class="spic git"></a>
+      </div>
+      <div class="social"data-aos="zoom-in"
+        data-aos-delay="100"
+        data-aos-mirror="true"
+        data-aos-once="false">
+        <a href="https://www.linkedin.com/in/imamul-hasan-5420b1241/" target="_blank" rel="noopener noreferrer">
+        <img src="static/linkedin.png" alt="" class="spic git"></a>
+      </div>
+    </div>
+    <div id="mail">
+      <img src="static/gmail.png" alt="" class="email" >: imamulhasan9748@gmail.com</div>
+  </section>
+  <!-- <footer></footer> -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    function typewrite(id, sentence) {
+      var f;
+      f = function (i) {
+        if (sentence[i] == '<') { document.getElementById(id).innerHTML += "<br>"; }
+        else document.getElementById(id).innerHTML += sentence[i];
+        if (i + 1 == sentence.length)
+          return;
+        window.setTimeout(function () { f(i + 1); }, 100);
+      }
+      f(0);
+    }
+    setTimeout(() => {
+      typewrite('div1-1', '"If you never try <You will never know."');
+    }, 1000);
+    setTimeout(() => {
+      typewrite('typs', 'Hey There!<Myself Imamul Hasan,<I am a 3rd year Engineering student');
+    }, 6000);
+
+    AOS.init();
+  </script>
+</body>
+
+</html>
