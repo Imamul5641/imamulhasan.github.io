@@ -43,6 +43,9 @@
     #myimg1 {
         width: 17vh;
     }
+    #profileh{
+        font-size: 35px;
+    }
 }
 @media only screen and (max-width: 705px) {
     /* #sprofile{
